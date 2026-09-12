@@ -151,7 +151,6 @@
   </a>
 </p>
 
-> ⚠️ Ganti nama repo di atas (`calavera-ai`, `ai-pet-robot`, `periodic-table-3d`, `class-platform`) kalau nama repo asli kamu di GitHub berbeda dari ini.
 
 ---
 
