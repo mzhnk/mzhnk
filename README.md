@@ -33,12 +33,13 @@
       </p>
     </td>
     <td width="50%" valign="top">
-      <h4>🐾 AI Pet Robot</h4>
-      <p>A Vector-inspired desktop companion robot. ESP32 handles hardware and local "alive" behaviors (blink, idle motion, touch response), while Calavera AI acts as the "brain" over WebSocket — a dual-brain architecture that keeps the robot responsive even offline.</p>
+      <h4>🐾 AI Pet Robot V2 — Make It Aware</h4>
+      <p>An aware desktop pet robot. An ESP32-CAM unit watches for people (left / center / right), an HC-SR04 sonar feels obstacles, and an MPU-6050 catches falls — all fused into a shared WorldState driving a 13-state behavior FSM (curious → follow → interact → avoid → recover). A Flask-based Local AI is the brain over WebSocket, fed live perception context; safety stays deterministic on-board and the pet lives fully offline.</p>
       <p>
         <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" />
         <img src="https://img.shields.io/badge/ESP32-E7352F?style=flat-square&logo=espressif&logoColor=white" />
         <img src="https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=websocket&logoColor=white" />
+        <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" />
       </p>
     </td>
   </tr>
@@ -71,7 +72,7 @@
 ### 🚀 Recently Shipped
 
 - ✅ **[3D Periodic Table Refactor](#)** — Architectural refactor of a 3D periodic table app from a single 690-LOC `index.html` into 20 modular ES Module files. Pure CSS 3D transforms, Anime.js transitions, bilingual UI (EN/ID), full mouse + touch interaction. Zero behavior changes, cleaner architecture. *(Sept 2026)*
-- ✅ **Class Platform v1 (Legacy)** — Original Flask class-management site that's now being rebuilt with Next.js + TypeScript.
+- ✅ **[AI Pet Robot V2 — Make It Aware](https://github.com/mzhnk/ai-pet-robot)** — Upgraded the desktop pet from reactive to aware: ESP32-CAM person detection with zoning, HC-SR04 obstacle sonar, MPU-6050 fall detection — fused into a shared WorldState driving a 13-state behavior FSM. Additive protocol V2, Local AI + dashboard integration, deterministic on-board safety. Verified by 206 automated tests (134 native · 51 pytest · 21 E2E). *(Sept 2026)*
 
 ---
 
