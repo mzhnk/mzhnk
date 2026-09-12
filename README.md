@@ -116,19 +116,13 @@
 ### 📌 Featured Repositories
 
 <p align="center">
-  <a href="https://github.com/mzhnk/calavera-ai">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=mzhnk&repo=calavera-ai&theme=radical" />
+  <a href="https://github.com/mzhnk/periodic-table">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=mzhnk&repo=periodic-table&theme=radical" />
   </a>
   <a href="https://github.com/mzhnk/ai-pet-robot">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=mzhnk&repo=ai-pet-robot&theme=radical" />
   </a>
   <br />
-  <a href="https://github.com/mzhnk/periodic-table-3d">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=mzhnk&repo=periodic-table-3d&theme=radical" />
-  </a>
-  <a href="https://github.com/mzhnk/class-platform">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=mzhnk&repo=class-platform&theme=radical" />
-  </a>
 </p>
 
 
