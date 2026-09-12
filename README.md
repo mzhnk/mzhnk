@@ -1,177 +1,76 @@
-<h1 align="center">Hi there! I'm hnz-k</h1>
+<h1 align="center">Hi, I'm mzhnk 👋</h1>
+<h3 align="center">Full-Stack Developer • AI & Web Enthusiast</h3>
 
-<div align="center">
+<p align="center">
+  Building AI-powered apps, experimenting with LLM integrations, and learning something new every single day.
+</p>
 
-**Full-Stack Developer | AI & Web Enthusiast | Lifelong Learner**
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=#FF7139)](https://your-portfolio-link.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
-
-</div>
-
-
----
-##  About Me
-
-
-```python
-class Developer:
-    def __init__(self):
-        self.name = "hnz-k"
-        self.role = "Full Stack Developer"
-        self.location = "Indonesia"
-        self.passion = "Building creative web and AI-powered tools"
-
-    def skills(self):
-        return ["Python", "JavaScript", "Flask", "Tailwind", "HTML", "CSS"]
-
-    def current_focus(self):
-        return "Developing Calavera Class Web and improving AcongBot AI"
-
-    def fun_fact(self):
-        return "I believe consistency beats talent every time."
-
-me = Developer()
-
-
-```
----
-## Tech Stack
-
-💻 Languages & Frameworks
-
-     
-
-🗄️ Databases & Cloud
-
-   
-
-🔧 Tools & Platforms
-
-   
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,flask,js,html,css,sqlite,nextjs,react,ts,postgres,git,github,arduino" />
+</p>
 
 ---
 
-## GitHub Analytics
+### 🔭 Currently Building
 
-<div align="center"><img height="160" src="https://github-readme-stats.vercel.app/api?username=hnz-k&show_icons=true&theme=radical&hide_border=true&count_private=true" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hnz-k&layout=compact&theme=radical&hide_border=true" />
-<img height="160" src="https://streak-stats.demolab.com/?user=hnz-k&theme=radical&hide_border=true" /></div>
+- **[Calavera AI](#)** — A Flask-based AI chatbot platform that routes across multiple LLM providers (Gemini, Groq, Mistral, Qwen via OpenRouter), with a custom auth system, admin control panel, and a fully responsive, mobile-first UI.
+- **AI Pet Robot** — A Vector-inspired desktop companion robot. ESP32 handles hardware and local "alive" behaviors (blink, idle motion, touch response), while Calavera AI acts as the "brain" over WebSocket — a dual-brain architecture that keeps the robot responsive even offline.
+- **Class Platform Rebuild** — Rebuilding an earlier Flask class-management site from scratch with a modern stack: Next.js, React, TypeScript, Tailwind, Prisma, and PostgreSQL.
 
+### 🛠️ Tech Stack
 
----
+**Languages & Core**
+`Python` · `JavaScript` · `TypeScript` · `HTML5` · `CSS3`
 
-## Featured Projects
+**Backend & Data**
+`Flask` · `Next.js (Route Handlers)` · `SQLite` · `PostgreSQL` · `Prisma`
 
-🔹 Calavera Class Web
+**Frontend**
+`React` · `Tailwind CSS` · `shadcn/ui`
 
-> A modern classroom web app with elegant UI, Flask backend, and Tailwind-powered responsive design.
+**Tools & Practices**
+`Git` · `GitHub` · `Zod` · `Vitest` · `Playwright` · `Arduino (ESP32)`
 
+### 🌱 Currently Learning
 
+- Modern full-stack patterns (Next.js App Router, server actions, type-safe validation)
+- Embedded systems & robotics (state machines, sensor integration, motor control)
+- Deepening JavaScript fundamentals after HTML/CSS
 
-Tech Used: Python · Flask · TailwindCSS · SQLite
-Highlights:
+### 📌 Featured Repositories
 
-Dark/Light theme
+<!-- Replace `your-username` and repo names below with your actual GitHub username/repos -->
+<p align="center">
+  <a href="https://github.com/your-username/calavera-ai">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=your-username&repo=calavera-ai&theme=radical" />
+  </a>
+  <a href="https://github.com/your-username/ai-pet-robot">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=your-username&repo=ai-pet-robot&theme=radical" />
+  </a>
+</p>
 
-Student management interface
+### 📊 GitHub Stats
 
-Smooth animations and clean architecture
+<!-- Replace `your-username` with your actual GitHub username -->
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=radical&hide_border=true" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=your-username&layout=compact&theme=radical&hide_border=true" />
+</p>
 
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=your-username&theme=radical&hide_border=true" />
+</p>
 
+### 📫 Connect With Me
 
----
+<!-- Fill in whichever you actually use, remove the rest -->
+<p align="center">
+  <a href="mailto:your-email@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="#"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a
+>
+  <a href="#"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
+</p>
 
-🔹 AcongBot
-
-> A smart WhatsApp AI bot powered by Google Gemini 2.0 Flash, built for real-time Q&A, memory, and image analysis.
-
-
-
-Tech Used: Node.js · Gemini API · Baileys
-Features:
-
-Image-to-sticker conversion
-
-Contextual conversation memory
-
-Greeting and smart command system
-
-
-
----
-
-🎯 Current Focus
-
-🔭 Improving Calavera Class Web
-
-🌱 Learning JavaScript Advanced & API Integration
-
-💬 Exploring AI + Flask Web
-
-🧩 Building my developer portfolio website
-
-
-
----
-
-💼 Experience (Personal & Projects)
-
-Role	Project / Organization	Duration	Highlights
-
-Full Stack Developer	Personal Project: Calavera Class	2025	Flask + Tailwind web app with responsive UI
-AI Developer	AcongBot AI	2025	Built chatbot using Gemini API
-Web Developer	Student Projects	2024–2025	Built static + dynamic websites with clean architecture
-
-
-
----
-
-📝 Learning Journal
-
-[ ] Advanced Flask Blueprint system
-
-[ ] RESTful API with JWT
-
-[ ] Docker Deployment
-
-[ ] React Fundamentals
-
-
-
----
-
-📫 Connect With Me
-
-<div align="center">   
-
-</div>
----
-
-⚡ Fun Facts
-
-🎮 I love coding while listening to lo-fi music
-
-🎸 I play guitar during free time
-
-🌍 I enjoy learning about technology, design, and finance
-
-🧩 My motto: “Winners aren’t the smartest — they’re the most consistent learners.”
-
-
-
----
-
-<div align="center"> Support My Work
-
-If you find my projects helpful, please consider supporting me!
-
- 
-
-<br>
-<img src="https://komarev.com/ghpvc/?username=hnz-k&color=blueviolet&style=flat-square" alt="Profile Views"/></div>
-
-
-Last updated: November 10, 2025
-
+<p align="center">
+  <i>Consistency over talent — building in public, one commit at a time.</i>
+</p>
