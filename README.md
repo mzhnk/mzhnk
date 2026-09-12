@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/mzhnk?tab=followers"><img src="https://img.shields.io/badge/Followers-0+-blue?style=flat-square&logo=github" /></a>
-  <a href="https://github.com/mzhnk?tab=achievements"><img src="https://img.shields.io/badge/Achievements-View-%231816?style=flat-square&logo=github" /></a>
+  <a href="https://github.com/mzhnk?tab=followers"><img src="https://img.shields.io/github/followers/mzhnk?style=flat-square&logo=github&label=Followers" /></a>
+  <a href="https://github.com/mzhnk?tab=achievements"><img src="https://img.shields.io/badge/Achievements-View-blueviolet?style=flat-square&logo=github" /></a>
   <img src="https://img.shields.io/badge/Status-Building_in_public-00E0FF?style=flat-square" />
   <img src="https://img.shields.io/badge/Location-Indonesia-red?style=flat-square&logo=googlemaps&logoColor=white" />
 </p>
@@ -136,22 +136,22 @@
 ### 📌 Featured Repositories
 
 <p align="center">
-  <a href="https://github.com/your-username/calavera-ai">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=your-username&repo=calavera-ai&theme=radical" />
+  <a href="https://github.com/mzhnk/calavera-ai">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=mzhnk&repo=calavera-ai&theme=radical" />
   </a>
-  <a href="https://github.com/your-username/ai-pet-robot">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=your-username&repo=ai-pet-robot&theme=radical" />
+  <a href="https://github.com/mzhnk/ai-pet-robot">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=mzhnk&repo=ai-pet-robot&theme=radical" />
   </a>
   <br />
-  <a href="https://github.com/your-username/periodic-table-3d">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=mzhnk&repo=periodic-table&theme=radical" />
+  <a href="https://github.com/mzhnk/periodic-table-3d">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=mzhnk&repo=periodic-table-3d&theme=radical" />
   </a>
-  <a href="https://github.com/your-username/class-platform">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=your-username&repo=class-platform&theme=radical" />
+  <a href="https://github.com/mzhnk/class-platform">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=mzhnk&repo=class-platform&theme=radical" />
   </a>
 </p>
 
-> Replace `your-username` and repo names above with your actual GitHub username and repository URLs.
+> ⚠️ Ganti nama repo di atas (`calavera-ai`, `ai-pet-robot`, `periodic-table-3d`, `class-platform`) kalau nama repo asli kamu di GitHub berbeda dari ini.
 
 ---
 
@@ -172,9 +172,9 @@
 
 <p align="center">
   <a href="mailto:your-email@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/your-linkedin-handle"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://instagram.com/your-instagram-handle"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
+  <a href="https://github.com/mzhnk"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 </p>
 
 ---
