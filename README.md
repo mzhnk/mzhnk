@@ -24,12 +24,13 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h4>🤖 Calavera AI</h4>
-      <p>A Flask-based AI chatbot platform that routes across multiple LLM providers (Gemini, Groq, Mistral, Qwen via OpenRouter), with a custom auth system, admin control panel, and a fully responsive, mobile-first UI.</p>
+      <h4>⚛️ 3D Periodic Table</h4>
+      <p>An interactive 3D visualization of all 118 chemical elements with 4 swappable layouts (Table, Sphere, Helix, Grid), Anime.js transitions, full mouse + touch interaction, long-press gestures, and bilingual support (EN/ID). Recently refactored from a 690-LOC single file into 20 modular ES Module files.</p>
       <p>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-        <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" />
-        <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" />
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+        <img src="https://img.shields.io/badge/ES_Modules-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
+        <img src="https://img.shields.io/badge/Anime.js-FF6600?style=flat-square" />
       </p>
     </td>
     <td width="50%" valign="top">
@@ -40,28 +41,6 @@
         <img src="https://img.shields.io/badge/ESP32-E7352F?style=flat-square&logo=espressif&logoColor=white" />
         <img src="https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=websocket&logoColor=white" />
         <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" />
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>📚 Class Platform Rebuild</h4>
-      <p>Rebuilding an earlier Flask class-management site from scratch with a modern stack: Next.js, React, TypeScript, Tailwind, Prisma, and PostgreSQL. Focusing on type-safety, server actions, and clean architecture.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" />
-        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-        <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" />
-        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h4>⚛️ 3D Periodic Table</h4>
-      <p>An interactive 3D visualization of all 118 chemical elements with 4 swappable layouts (Table, Sphere, Helix, Grid), Anime.js transitions, full mouse + touch interaction, long-press gestures, and bilingual support (EN/ID). Recently refactored from a 690-LOC single file into 20 modular ES Module files.</p>
-      <p>
-        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-        <img src="https://img.shields.io/badge/ES_Modules-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-        <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
-        <img src="https://img.shields.io/badge/Anime.js-FF6600?style=flat-square" />
       </p>
     </td>
   </tr>
