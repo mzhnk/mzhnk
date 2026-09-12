@@ -116,13 +116,8 @@
 ### 📌 Featured Repositories
 
 <p align="center">
-  <a href="https://github.com/mzhnk/periodic-table">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=mzhnk&repo=periodic-table&theme=radical" />
-  </a>
-  <a href="https://github.com/mzhnk/ai-pet-robot">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=mzhnk&repo=ai-pet-robot&theme=radical" />
-  </a>
-  <br />
+  <a href="https://github.com/mzhnk/periodic-table">periodic-table</a> ·
+  <a href="https://github.com/mzhnk/ai-pet-robot">ai-pet-robot</a>
 </p>
 
 
