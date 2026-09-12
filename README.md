@@ -39,10 +39,9 @@
 
 ### 📌 Featured Repositories
 
-<!-- Replace `your-username` and repo names below with your actual GitHub username/repos -->
 <p align="center">
   <a href="https://github.com/your-username/calavera-ai">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=your-username&repo=calavera-ai&theme=radical" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?mzhnk&theme=radical" />
   </a>
   <a href="https://github.com/your-username/ai-pet-robot">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=your-username&repo=ai-pet-robot&theme=radical" />
@@ -51,22 +50,20 @@
 
 ### 📊 GitHub Stats
 
-<!-- Replace `your-username` with your actual GitHub username -->
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=radical&hide_border=true" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=your-username&layout=compact&theme=radical&hide_border=true" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=mzhnk&show_icons=true&theme=radical&hide_border=true" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mzhnk&layout=compact&theme=radical&hide_border=true" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=your-username&theme=radical&hide_border=true" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mzhnk&theme=radical&hide_border=true" />
 </p>
 
 ### 📫 Connect With Me
 
-<!-- Fill in whichever you actually use, remove the rest -->
 <p align="center">
-  <a href="mailto:your-email@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a
+  <a href="mailto:zihankholidi@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="www.linkedin.com/in/mzhnk"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a
 >
   <a href="#"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
 </p>
