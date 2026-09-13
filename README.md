@@ -152,6 +152,13 @@ The current version is the result of an architectural refactor: a single 690-lin
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=mzhnk&theme=radical&hide_border=true" alt="GitHub contribution streak" />
 </p>
 
+<p align="center">
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=mzhnk&theme=react-dark&hide_border=true"
+    alt="GitHub contribution activity graph"
+  />
+</p>
+
 
 ---
 
@@ -163,13 +170,6 @@ The current version is the result of an architectural refactor: a single 690-lin
   <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="https://instagram.com/YOUR_INSTAGRAM_HANDLE"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
 </p>
-
-
-<!--
-  Add real links below, then move them above the closing comment to show them:
-  
-  
--->
 
 ---
 
