@@ -49,7 +49,7 @@ Sensors                        Fusion              Decision                 Outp
 ESP32-CAM   (person zoning) ┐
 HC-SR04     (distance)      ├──▶  WorldState ──▶  13-state FSM  ──▶  motors · LEDs · sound
 MPU-6050    (fall / tilt)   ┘                          ▲
-                                                        │
+                                                       │
                               Flask "Local AI" (WebSocket, offline-capable)
 ```
 
