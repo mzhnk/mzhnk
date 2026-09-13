@@ -2,15 +2,23 @@
   <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=28&pause=1000&color=00E0FF&center=true&vCenter=true&width=750&lines=Hi%2C+I'm+mzhnk+%F0%9F%91%8B;Student+Developer+from+Indonesia;Building+AI%2C+Web+%26+Embedded+Projects;Currently+building%3A+AI+Pet+Robot" alt="Typing SVG" />
 </h1>
 
-
 <p align="center">
   Student developer from Indonesia, building AI-powered applications while exploring web development, embedded systems, and robotics.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Location-Indonesia-red?style=flat-square&logo=googlemaps&logoColor=white" alt="Location: Indonesia" />
-  <img src="https://img.shields.io/badge/Status-Building_in_public-00E0FF?style=flat-square" alt="Status: building in public" />
+  <img src="https://komarev.com/ghpvc/?username=mzhnk&color=0F6675&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views" />
+  <img src="https://img.shields.io/github/followers/mzhnk?style=flat-square&label=Followers&color=0F6675" alt="GitHub Followers" />
+  <img src="https://img.shields.io/github/stars/mzhnk?style=flat-square&label=Total+Stars&color=0F6675" alt="Total GitHub Stars" />
 </p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Location-Indonesia-0F6675?style=flat-square&logo=googlemaps&logoColor=white" alt="Location: Indonesia" />
+  <img src="https://img.shields.io/badge/Status-Building_in_public-0F6675?style=flat-square" alt="Status: Building in public" />
+  <img src="https://img.shields.io/badge/Focus-AI_%7C_Web_%7C_Embedded_%7C_Robotics-0F6675?style=flat-square" alt="Focus: AI, Web, Embedded Systems, Robotics" />
+</p>
+
+
 
 ---
 
@@ -136,9 +144,14 @@ The current version is the result of an architectural refactor: a single 690-lin
 ## 📊 GitHub Activity
 
 <p align="center">
-  <img height="170" src="https://github-stats-extended.vercel.app/api?username=mzhnk&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true" alt="mzhnk's GitHub stats" />
-  <img height="170" src="https://github-stats-extended.vercel.app/api/top-langs/?username=mzhnk&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="mzhnk's most used languages" />
+  <img height="170" src="https://github-stats-extended.vercel.app/api?username=mzhnk&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub activity statistics" />
+  <img height="170" src="https://github-stats-extended.vercel.app/api/top-langs/?username=mzhnk&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Most used programming languages" />
 </p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mzhnk&theme=radical&hide_border=true" alt="GitHub contribution streak" />
+</p>
+
 
 ---
 
