@@ -135,8 +135,8 @@ The current version is the result of an architectural refactor: a single 690-lin
 ## 📊 GitHub Activity
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=mzhnk&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true" alt="mzhnk's GitHub stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mzhnk&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="mzhnk's most used languages" />
+  <img height="170" src="https://github-stats-extended.vercel.app/api?username=mzhnk&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true" alt="mzhnk's GitHub stats" />
+  <img height="170" src="https://github-stats-extended.vercel.app/api/top-langs/?username=mzhnk&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="mzhnk's most used languages" />
 </p>
 
 ---
