@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  Full-stack developer based in Indonesia, building AI-powered applications and learning embedded systems along the way.
+  Student developer from Indonesia, building AI-powered applications while exploring web development, embedded systems, and robotics.
 </p>
 
 <p align="center">
@@ -15,9 +15,9 @@
 
 ## About Me
 
-I build full-stack and AI-powered applications, and I'm expanding into embedded systems and robotics. Most of what I ship pairs a web or API layer with something that has to behave predictably on real hardware or in real time: a WebSocket protocol, a local AI backend, an ESP32 board that keeps working even when the network doesn't.
+I'm a student developer from Indonesia, learning by building practical software and embedded systems across AI, web development, and robotics. Most of what I build is hands-on and systems-oriented: connecting a web or API layer to something that has to behave predictably in real time, whether that's a WebSocket protocol, a local AI backend, or an ESP32 that keeps its core behavior running even when the network doesn't.
 
-Right now I'm splitting time between a 3D data visualization on the web and a desktop robot whose on-board behavior has to stay safe and "alive" even when its AI brain is offline. Both projects are less about the tech stack and more about the architecture underneath it.
+Right now, I'm splitting my time between a 3D data visualization on the web and a desktop robot whose on-board behavior has to stay safe and "alive" even when its AI brain is offline. I'm especially interested in understanding not just how technologies work individually, but how the architecture underneath them makes the whole system reliable.
 
 ---
 
