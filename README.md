@@ -143,30 +143,34 @@ The current version is the result of an architectural refactor: a single 690-lin
 
 ## 📊 GitHub Activity
 
-<div align="center">
-
-  <p>
-    <img
-      width="480"
-      src="https://github-stats-extended.vercel.app/api?username=mzhnk&show_icons=true&theme=dark&hide_border=false&include_all_commits=true&count_private=false&title_color=00AFC2&text_color=8B949E&icon_color=00AFC2&bg_color=0D1117&border_color=164A55&border_radius=10"
-      alt="GitHub activity statistics"
-    />
-    <img
-      width="350"
-      src="https://github-readme-stats.shion.dev/api/top-langs/?username=mzhnk&layout=compact&theme=dark&hide_border=false&langs_count=8&title_color=00AFC2&text_color=8B949E&icon_color=00AFC2&bg_color=0D1117&border_color=164A55&border_radius=10"
-      alt="Most used programming languages"
-    />
-  </p>
-
-  <p>
-    <img
-      width="650"
-      src="https://streak-stats.demolab.com?user=mzhnk&theme=dark&hide_border=false&background=0D1117&border=164A55&stroke=164A55&ring=00AFC2&fire=00AFC2&currStreakLabel=00AFC2&sideLabels=8B949E&currStreakNum=DDE3F0&sideNums=DDE3F0&dates=6E7890&border_radius=10"
-      alt="GitHub contribution streak"
-    />
-  </p>
-
-</div>
+<table align="center" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+      <img
+        height="180"
+        src="https://github-stats-extended.vercel.app/api?username=mzhnk&show_icons=true&theme=dark&hide_border=false&include_all_commits=true&count_private=false&title_color=00AFC2&text_color=8B949E&icon_color=00AFC2&bg_color=0D1117&border_color=164A55&border_radius=10"
+        alt="GitHub activity statistics"
+      />
+    </td>
+    <td align="center">
+      <img
+        height="180"
+        src="https://github-readme-stats.shion.dev/api/top-langs/?username=mzhnk&layout=compact&theme=dark&hide_border=false&langs_count=8&title_color=00AFC2&text_color=8B949E&icon_color=00AFC2&bg_color=0D1117&border_color=164A55&border_radius=10"
+        alt="Most used programming languages"
+      />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <br>
+      <img
+        height="180"
+        src="https://streak-stats.demolab.com?user=mzhnk&theme=dark&hide_border=false&background=0D1117&border=164A55&stroke=164A55&ring=00AFC2&fire=00AFC2&currStreakLabel=00AFC2&sideLabels=8B949E&currStreakNum=DDE3F0&sideNums=DDE3F0&dates=6E7890&border_radius=10"
+        alt="GitHub contribution streak"
+      />
+    </td>
+  </tr>
+</table>
 
 ---
 
