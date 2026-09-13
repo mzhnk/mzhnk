@@ -143,14 +143,30 @@ The current version is the result of an architectural refactor: a single 690-lin
 
 ## 📊 GitHub Activity
 
-<p align="center">
-  <img height="170" src="https://github-stats-extended.vercel.app/api?username=mzhnk&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub activity statistics" />
-  <img height="170" src="https://github-stats-extended.vercel.app/api/top-langs/?username=mzhnk&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Most used programming languages" />
-</p>
+<div align="center">
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mzhnk&theme=radical&hide_border=true" alt="GitHub contribution streak" />
-</p>
+  <p>
+    <img
+      width="480"
+      src="https://github-stats-extended.vercel.app/api?username=mzhnk&show_icons=true&theme=dark&hide_border=false&include_all_commits=true&count_private=false&title_color=00AFC2&text_color=8B949E&icon_color=00AFC2&bg_color=0D1117&border_color=164A55&border_radius=10"
+      alt="GitHub activity statistics"
+    />
+    <img
+      width="350"
+      src="https://github-readme-stats.shion.dev/api/top-langs/?username=mzhnk&layout=compact&theme=dark&hide_border=false&langs_count=8&title_color=00AFC2&text_color=8B949E&icon_color=00AFC2&bg_color=0D1117&border_color=164A55&border_radius=10"
+      alt="Most used programming languages"
+    />
+  </p>
+
+  <p>
+    <img
+      width="650"
+      src="https://streak-stats.demolab.com?user=mzhnk&theme=dark&hide_border=false&background=0D1117&border=164A55&stroke=164A55&ring=00AFC2&fire=00AFC2&currStreakLabel=00AFC2&sideLabels=8B949E&currStreakNum=DDE3F0&sideNums=DDE3F0&dates=6E7890&border_radius=10"
+      alt="GitHub contribution streak"
+    />
+  </p>
+
+</div>
 
 ---
 
