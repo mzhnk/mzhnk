@@ -1,6 +1,7 @@
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=28&pause=1000&color=00E0FF&center=true&vCenter=true&width=750&lines=Hi%2C+I'm+mzhnk+%F0%9F%91%8B;Student+Developer+%7C+Builder;Exploring+AI%2C+Web%2C+Embedded+Systems+%26+Robotics;Currently+building%3A+AI+Pet+Robot+V2" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=28&pause=1000&color=00E0FF&center=true&vCenter=true&width=750&lines=Hi%2C+I'm+mzhnk+%F0%9F%91%8B;Student+Developer+from+Indonesia;Building+AI%2C+Web+%26+Embedded+Projects;Currently+building%3A+AI+Pet+Robot" alt="Typing SVG" />
 </h1>
+
 
 <p align="center">
   Student developer from Indonesia, building AI-powered applications while exploring web development, embedded systems, and robotics.
@@ -79,19 +80,22 @@ The current version is the result of an architectural refactor: a single 690-lin
 <p>
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" />
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
 </p>
 
-**Frontend**
+**Currently Exploring**
 
 <p>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
   <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-38BDF8?style=flat-square&logo=tailwind-css&logoColor=white" />
   <img src="https://img.shields.io/badge/shadcn/ui-000000?style=flat-square" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" />
+  <img src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square" />
 </p>
 
 **Backend & Data**
@@ -99,9 +103,6 @@ The current version is the result of an architectural refactor: a single 690-lin
 <p>
   <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" />
   <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" />
-  <img src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square" />
 </p>
 
 **Embedded & Hardware**
@@ -116,19 +117,19 @@ The current version is the result of an architectural refactor: a single 690-lin
 <p>
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white" />
   <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white" />
 </p>
 
 </details>
 
 ---
 
-## 🌱 Currently Learning
+## 🌱 Currently Exploring
 
-- **Modern full-stack patterns** — Next.js App Router, server actions, type-safe validation
-- **Embedded systems & robotics** — state machines, sensor integration, motor control
-- **JavaScript fundamentals, in depth** — ES Modules, design patterns, and architecture beyond surface-level HTML/CSS
+* **Modern web development:** TypeScript, React, Next.js App Router, server actions, and type-safe application patterns
+* **Embedded systems & robotics:** state machines, sensor integration, motor control, and building reliable real-time systems
+* **JavaScript & software architecture:** ES Modules, design patterns, modular architecture, and understanding how the pieces work beneath the framework layer
 
 ---
 
