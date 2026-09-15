@@ -192,6 +192,7 @@ The serious part of this profile ends above this line. Down here, it's all just 
 
 <p align="center">
   <i>Consistency over talent, building in public, one commit at a time.</i>
+  <i>재능보다 꾸준함, 한 번에 한 커밋씩.</i>
 </p>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0F6675&height=80&section=footer" alt="" />
