@@ -187,10 +187,6 @@ The serious part of this profile ends above this line. Down here, it's all just 
   <img src="https://readme-jokes.vercel.app/api?bgColor=%230D1117&borderColor=%23164A55&codeColor=%2300AFC2" alt="Random dev joke" />
 </p>
 
-<p align="center">
-  <img src="https://cataas.com/cat?width=420" alt="A random cat" />
-</p>
-<p align="center"><i>A random cat on every visit. This is the whole feature.</i></p>
 
 ---
 
