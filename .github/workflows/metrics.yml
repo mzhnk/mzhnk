@@ -14,10 +14,39 @@ jobs:
     timeout-minutes: 15
 
     steps:
+      - name: Verify METRICS_TOKEN
+        id: verify
+        env:
+          TOKEN_CHECK: ${{ secrets.METRICS_TOKEN }}
+        run: |
+          if [ -z "$TOKEN_CHECK" ]; then
+            echo "::error::METRICS_TOKEN secret is empty or missing. Create it in Settings > Secrets and variables > Actions."
+            exit 1
+          fi
+          case "$TOKEN_CHECK" in
+            ghp_*)
+              echo "Token type: classic (correct)"
+              ;;
+            github_pat_*)
+              echo "::error::METRICS_TOKEN is a FINE-GRAINED token (github_pat_...). Metrics needs a CLASSIC token (ghp_...). Fix: Settings > Developer settings > Personal access tokens > Tokens (classic) > Generate new token (classic), leave all scopes unchecked, then update the METRICS_TOKEN secret with it."
+              exit 1
+              ;;
+            *)
+              echo "::warning::Unrecognized token format (expected ghp_...). Will still test it against the API."
+              ;;
+          esac
+          code=$(curl -s -o /tmp/me.json -w "%{http_code}" -H "Authorization: Bearer $TOKEN_CHECK" https://api.github.com/user)
+          echo "GET /user -> HTTP $code"
+          if [ "$code" != "200" ]; then
+            echo "::error::Token check failed (HTTP $code). 401 = invalid or expired token, 404 = fine-grained token problem. Regenerate a CLASSIC token (ghp_..., no scopes) and update the METRICS_TOKEN secret."
+            exit 1
+          fi
+          echo "Token OK, authenticated as: $(jq -r .login /tmp/me.json)"
+
       - name: Isometric 3D commit calendar
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ github.token }}
+          token: ${{ secrets.METRICS_TOKEN }}
           filename: isocalendar.svg
           base: ""
           plugin_isocalendar: yes
@@ -27,9 +56,10 @@ jobs:
           committer_message: "chore: update isocalendar [skip ci]"
 
       - name: Achievements
+        if: always() && steps.verify.outcome == 'success'
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ github.token }}
+          token: ${{ secrets.METRICS_TOKEN }}
           filename: achievements.svg
           base: ""
           plugin_achievements: yes
