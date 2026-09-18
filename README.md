@@ -30,7 +30,6 @@ Right now, that means two projects: an AI pet robot and a 3D periodic table in t
 
 A desktop pet robot built from an ESP32 "body" and a Flask-based "Local AI" brain that talk to each other over WebSocket. It's my way of learning embedded systems and sensor fusion by building something physical that has to keep working, not just something that compiles.
 
-<!-- Add project screenshot here: a real photo or demo GIF of the robot, uploaded to the repo -->
 
 **What makes it technically interesting:**
 
@@ -64,7 +63,6 @@ An interactive 3D visualization of all 118 chemical elements with four swappable
 
 The current version is the result of an architectural refactor: a single 690-line `index.html` split into 20 modular ES Module files, with zero behavior change and a much cleaner structure to build on.
 
-<!-- Add project screenshot here: a real screenshot of one of the four layouts, uploaded to the repo -->
 
 **What makes it technically interesting:**
 
@@ -156,7 +154,7 @@ The current version is the result of an architectural refactor: a single 690-lin
 
 The serious part of this profile ends above this line. Down here, it's all just for fun.
 
-<!-- Snake animation: requires the GitHub Actions workflow (snake.yml) in .github/workflows/. The image appears after the first workflow run. -->
+<!-- Snake animation -->
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mzhnk/mzhnk/output/github-contribution-grid-snake-dark.svg" />
@@ -169,7 +167,7 @@ The serious part of this profile ends above this line. Down here, it's all just 
   <img src="https://ghchart.rshah.org/00AFC2/mzhnk" alt="My contribution chart for the last year" />
 </p>
 
-<!-- Milestone badges: plain shields.io images, no workflow and no token needed. Update the numbers as the projects grow. -->
+<!-- Milestone badges -->
 <p align="center">
   <img src="https://img.shields.io/badge/Automated_Tests-206_Passing-0F6675?style=for-the-badge&logo=githubactions&logoColor=E6F7FA" alt="206 automated tests passing" />
   <img src="https://img.shields.io/badge/Pet_Robot_FSM-13_States-0F6675?style=for-the-badge&logo=arduino&logoColor=E6F7FA" alt="13-state behavior FSM on the pet robot" />
