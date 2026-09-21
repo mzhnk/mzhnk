@@ -1,3 +1,5 @@
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0F6675&height=100&section=header" alt="" />
+
 <h1 align="center">
   <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=28&pause=1000&color=00AFC2&center=true&vCenter=true&width=750&lines=Hi%2C+I'm+mzhnk+%F0%9F%91%8B;Student+Developer+from+Indonesia;Building+AI%2C+Web+%26+Embedded+Projects;Currently+building%3A+AI+Pet+Robot" alt="Hi, I'm mzhnk" />
 </h1>
@@ -20,7 +22,7 @@
 
 I'm a student developer from Indonesia. Most of what I know comes from building real projects, not just from following tutorials. My interests span AI, web development, embedded systems, and robotics, usually at the point where software has to behave predictably in real time.
 
-Right now, that means two projects: an AI pet robot and a 3D periodic table in the browser. Beyond making things work, I care about the architecture underneath: how state is shared, how failures are handled, and what makes a system reliable enough to trust.
+Right now, that means two projects: an AI pet robot and a 3D periodic table in the browser. Beyond making things work, I care about the architecture underneath: how state is shared, how failures are handled, and what makes a system reliable enough to trust. I document the process as I go, mostly because the failures teach more than the wins.
 
 ---
 
@@ -55,6 +57,12 @@ MPU-6050    (fall / tilt)   ┘                          ▲
 **Stack:** `C++` `ESP32` `WebSocket` `Flask`<br>
 **Repo:** [github.com/mzhnk/ai-pet-robot](https://github.com/mzhnk/ai-pet-robot)
 
+<p align="center">
+  <img src="https://github-stats-extended.vercel.app/api/pin/?username=mzhnk&repo=ai-pet-robot&theme=dark&hide_border=false&title_color=00AFC2&text_color=8B949E&icon_color=00AFC2&bg_color=0D1117&border_color=164A55&border_radius=10" alt="ai-pet-robot repository card" />
+  <br>
+  <img src="https://img.shields.io/github/last-commit/mzhnk/ai-pet-robot?style=flat-square&label=Last+Commit&color=0F6675" alt="ai-pet-robot last commit date" />
+</p>
+
 <br>
 
 ### 3D Periodic Table
@@ -73,6 +81,12 @@ The current version is the result of an architectural refactor: a single 690-lin
 **Status:** Refactor shipped · September 2026<br>
 **Stack:** `JavaScript` `ES Modules` `CSS3` `Anime.js`<br>
 **Repo:** [github.com/mzhnk/periodic-table](https://github.com/mzhnk/periodic-table)
+
+<p align="center">
+  <img src="https://github-stats-extended.vercel.app/api/pin/?username=mzhnk&repo=periodic-table&theme=dark&hide_border=false&title_color=00AFC2&text_color=8B949E&icon_color=00AFC2&bg_color=0D1117&border_color=164A55&border_radius=10" alt="periodic-table repository card" />
+  <br>
+  <img src="https://img.shields.io/github/last-commit/mzhnk/periodic-table?style=flat-square&label=Last+Commit&color=0F6675" alt="periodic-table last commit date" />
+</p>
 
 ---
 
@@ -154,12 +168,23 @@ The current version is the result of an architectural refactor: a single 690-lin
 
 The serious part of this profile ends above this line. Down here, it's all just for fun.
 
+<p align="center"><i>My contribution graph, three ways: eaten by a snake, rebuilt as a 3D city, and flattened for the skeptics.</i></p>
+
 <!-- Snake animation -->
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mzhnk/mzhnk/output/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mzhnk/mzhnk/output/github-contribution-grid-snake.svg" />
     <img alt="Snake animation eating my contribution graph" src="https://raw.githubusercontent.com/mzhnk/mzhnk/output/github-contribution-grid-snake.svg" />
+  </picture>
+</p>
+
+<!-- 3D contribution city: requires the workflow (.github/workflows/3d-contrib.yml). The image appears after its first run. -->
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mzhnk/mzhnk/3d-contrib/profile-night-view.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mzhnk/mzhnk/3d-contrib/profile-green.svg" />
+    <img alt="A year of my commits rendered as a 3D city" src="https://raw.githubusercontent.com/mzhnk/mzhnk/3d-contrib/profile-green.svg" />
   </picture>
 </p>
 
