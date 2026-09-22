@@ -90,42 +90,67 @@ The current version is the result of an architectural refactor: a single 690-lin
 
 ---
 
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=21&height=70&section=header&text=Tech%20Stack&fontSize=28&fontColor=fff&fontAlignY=65&animation=fadeIn" width="100%" alt="Tech Stack" />
+</div>
+
 ## 🛠️ Tech Stack
+
+<div align="center">
+
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=py,js,ts,cpp,html,css,react,nextjs,tailwind,flask,sqlite,postgres,prisma,arduino,git,github&theme=dark&perline=8" alt="Python, JavaScript, TypeScript, C++, HTML, CSS, React, Next.js, Tailwind CSS, Flask, SQLite, PostgreSQL, Prisma, Arduino, Git, GitHub" />
+</a>
+
+<br><br>
 
 **Languages**
 
-<p>
-  <img src="https://skillicons.dev/icons?i=py,js,cpp,html,css&theme=dark" alt="Python, JavaScript, C++, HTML, CSS" />
-</p>
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white)
 
-**Currently Exploring**
+**Frontend**
 
-<p>
-  <img src="https://skillicons.dev/icons?i=ts,react,nextjs,tailwind,postgres,prisma&theme=dark" alt="TypeScript, React, Next.js, Tailwind CSS, PostgreSQL, Prisma" />
-  <br>
-  <img src="https://img.shields.io/badge/shadcn%2Fui-0F6675?style=flat-square" alt="shadcn/ui" />
-  <img src="https://img.shields.io/badge/Zod-0F6675?style=flat-square" alt="Zod" />
-</p>
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Anime.js](https://img.shields.io/badge/Anime.js-0D1117?style=for-the-badge&logo=animedotjs&logoColor=white)
+![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?style=for-the-badge&logo=shadcnui&logoColor=white)
+![Zod](https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white)
 
 **Backend & Data**
 
-<p>
-  <img src="https://skillicons.dev/icons?i=flask,sqlite&theme=dark" alt="Flask, SQLite" />
-</p>
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-0D1117?style=for-the-badge)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
 
 **Embedded & Hardware**
 
-<p>
-  <img src="https://skillicons.dev/icons?i=arduino&theme=dark" alt="Arduino" />
-  <img src="https://img.shields.io/badge/ESP32-0F6675?style=flat-square&logo=espressif&logoColor=white" alt="ESP32" />
-</p>
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
+
+<p><sub><i>Also in the parts bin: ESP32-CAM, HC-SR04, and MPU-6050.</i></sub></p>
 
 **Testing & Tooling**
 
-<p>
-  <img src="https://skillicons.dev/icons?i=git,github,vitest&theme=dark" alt="Git, GitHub, Vitest" />
-  <img src="https://img.shields.io/badge/Playwright-0F6675?style=flat-square&logo=playwright&logoColor=white" alt="Playwright" />
-</p>
+![pytest](https://img.shields.io/badge/pytest-0A101F?style=for-the-badge&logo=pytest&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+
+<br>
+
+<p><sub><i>Learning in progress: TypeScript, React, Next.js, Tailwind CSS, PostgreSQL, Prisma, shadcn/ui, and Zod. The rest is already shipped in real projects.</i></sub></p>
+
+</div>
 
 ---
 
@@ -158,7 +183,7 @@ The current version is the result of an architectural refactor: a single 690-lin
 <p align="center">
   <a href="https://github.com/mzhnk"><img src="https://img.shields.io/badge/GitHub-0F6675?style=for-the-badge&logo=github&logoColor=E6F7FA" alt="GitHub profile" /></a>
   <a href="mailto:zihankholidi@gmail.com"><img src="https://img.shields.io/badge/Email-0F6675?style=for-the-badge&logo=gmail&logoColor=E6F7FA" alt="Email" /></a>
-  <a href="https://www.linkedin.com/in/mzhnk"><img src="https://img.shields.io/badge/LinkedIn-0F6675?style=for-the-badge&logo=linkedin&logoColor=E6F7FA" alt="LinkedIn profile" /></a>
+  <a href="https://www.linkedin.com/in/mzhnk"><img src="https://img.shields.io/badge/LinkedIn-0F6675?style=for-the-badge" alt="LinkedIn profile" /></a>
   <a href="https://instagram.com/mzkx2201"><img src="https://img.shields.io/badge/Instagram-0F6675?style=for-the-badge&logo=instagram&logoColor=E6F7FA" alt="Instagram profile" /></a>
 </p>
 
