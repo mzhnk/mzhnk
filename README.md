@@ -5,7 +5,7 @@
 </h1>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=mzhnk&color=0F6675&style=flat-square&label=PROFILE+VIEWS" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=mzhnk&color=0F6675&style=flat-square&label=Profile+Views" alt="Profile views" />
   <img src="https://img.shields.io/github/followers/mzhnk?style=flat-square&label=Followers&color=0F6675" alt="GitHub followers" />
   <img src="https://img.shields.io/github/stars/mzhnk?style=flat-square&label=Total+Stars&color=0F6675" alt="Total stars" />
 </p>
