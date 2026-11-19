@@ -1,4 +1,4 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0F6675&height=120&section=header&reversal=true&animation=fadeIn" alt="" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=7983DE&height=120&section=header&reversal=true&animation=fadeIn" alt="" />
 
 <p align="center">
   <a href="https://github.com/mzhnk">
@@ -318,4 +318,4 @@ index.html  (690 lines)   ──▶   20 ES Modules
   <sub>재능보다 꾸준함, 한 번에 한 커밋씩.</sub>
 </p>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0F6675&height=120&section=footer&animation=fadeIn" alt="" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=7983DE&height=120&section=footer&animation=fadeIn" alt="" />
