@@ -1,237 +1,303 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0F6675&height=100&section=header" alt="" />
-
-<h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=28&pause=1000&color=00AFC2&center=true&vCenter=true&width=750&lines=Hi%2C+I'm+mzhnk+%F0%9F%91%8B;Student+Developer+from+Indonesia;Building+AI%2C+Web+%26+Embedded+Projects;Currently+building%3A+AI+Pet+Robot" alt="Hi, I'm mzhnk" />
-</h1>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0F6675&height=140&section=header&text=mzhnk&fontSize=46&fontColor=E6F7FA&fontAlignY=42&desc=Software%20that%20has%20to%20keep%20working%20in%20the%20real%20world&descSize=16&descAlignY=68&descColor=9FD8E0" alt="mzhnk: software that has to keep working in the real world" />
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=mzhnk&color=0F6675&style=flat-square&label=Profile+Views" alt="Profile views" />
+  <img src="https://img.shields.io/badge/Student_Developer-Indonesia-0F6675?style=flat-square" alt="Student developer, Indonesia" />
+  <img src="https://img.shields.io/badge/Focus-AI_·_Web_·_Embedded_·_Robotics-0F6675?style=flat-square" alt="Focus: AI, web, embedded, robotics" />
+  <img src="https://img.shields.io/badge/Mode-Building_in_public-0F6675?style=flat-square" alt="Building in public" />
   <img src="https://img.shields.io/github/followers/mzhnk?style=flat-square&label=Followers&color=0F6675" alt="GitHub followers" />
-  <img src="https://img.shields.io/github/stars/mzhnk?style=flat-square&label=Total+Stars&color=0F6675" alt="Total stars" />
+  <img src="https://komarev.com/ghpvc/?username=mzhnk&color=0F6675&style=flat-square&label=Views" alt="Profile views" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Location-Indonesia-0F6675?style=flat-square&logo=googlemaps&logoColor=white" alt="Location: Indonesia" />
-  <img src="https://img.shields.io/badge/Status-Building_in_public-0F6675?style=flat-square" alt="Status: building in public" />
-  <img src="https://img.shields.io/badge/Focus-AI_%7C_Web_%7C_Embedded_%7C_Robotics-0F6675?style=flat-square" alt="Focus: AI, web, embedded, robotics" />
+  <a href="#about">About</a> ·
+  <a href="#projects">Projects</a> ·
+  <a href="#stack">Stack</a> ·
+  <a href="#exploring">Exploring</a> ·
+  <a href="#activity">Activity</a> ·
+  <a href="#connect">Connect</a>
 </p>
 
 ---
 
-## 👋 About Me
+<a id="about"></a>
+## About
 
-I'm a student developer from Indonesia. Most of what I know comes from building real projects, not just from following tutorials. My interests span AI, web development, embedded systems, and robotics, usually at the point where software has to behave predictably in real time.
+I'm a student developer from Indonesia. Most of what I know comes from building real projects rather than following tutorials, usually at the point where software meets hardware and has to behave predictably in real time.
 
-Right now, that means two projects: an AI pet robot and a 3D periodic table in the browser. Beyond making things work, I care about the architecture underneath: how state is shared, how failures are handled, and what makes a system reliable enough to trust. I document the process as I go, mostly because the failures teach more than the wins.
+What I care about beyond "it works": how state is shared, how failures are handled, and what makes a system reliable enough to trust. I document the process as I go, because the failures teach more than the wins.
+
+> [!NOTE]
+> **Building in public.** Everything below is work in progress. I write down what broke as well as what worked.
+
+```yaml
+whoami:
+  handle: mzhnk
+  from: Indonesia
+  role: student developer
+  interests: [AI, web, embedded systems, robotics]
+  building_now:
+    - AI Pet Robot (V2, "Make It Aware")
+    - 3D Periodic Table
+  learning: [TypeScript, React, Next.js, Tailwind, PostgreSQL, Prisma, shadcn/ui, Zod]
+  principle: "Failures teach more than wins. Document both."
+```
 
 ---
 
-## 🚀 Featured Projects
+<a id="projects"></a>
+## Projects
 
-### AI Pet Robot · V2 "Make It Aware"
+### 🤖 AI Pet Robot · V2 "Make It Aware"
 
-A desktop pet robot built from an ESP32 "body" and a Flask-based "Local AI" brain that talk to each other over WebSocket. It's my way of learning embedded systems and sensor fusion by building something physical that has to keep working, not just something that compiles.
+A desktop pet robot: an **ESP32 body** and a **Flask "Local AI" brain** talking over WebSocket. It's my way of learning embedded systems and sensor fusion by building something physical that has to keep working, not just something that compiles.
 
+```mermaid
+flowchart LR
+    subgraph S["Perception"]
+        CAM["ESP32-CAM<br/>person zoning L / C / R"]
+        US["HC-SR04<br/>obstacle distance"]
+        IMU["MPU-6050<br/>fall / tilt"]
+    end
 
-**What makes it technically interesting:**
+    CAM --> WS
+    US --> WS
+    IMU --> WS
+    WS(["WorldState<br/>shared fusion"]) --> FSM{{"13-state<br/>behavior FSM"}}
+    FSM --> OUT["Motors · LEDs · Sound"]
 
-- **Perception:** an ESP32-CAM detects people and buckets their position (left, center, right), an HC-SR04 measures distance to obstacles, and an MPU-6050 catches falls and tilts.
-- **Fusion:** all three sensor streams feed into one shared `WorldState`.
-- **Decision:** a 13-state behavior FSM (curious → follow → interact → avoid → recover) turns that state into behavior.
-- **Safety first:** obstacle avoidance and fall recovery are resolved deterministically on the ESP32 itself, so the AI layer can't override safety-critical decisions.
-- **Offline by design:** the robot keeps its base behaviors even if the WiFi link or the AI backend drops.
+    AI["Flask Local AI<br/>WebSocket, offline-capable"] <-.-> FSM
 
+    SAFE["Deterministic safety on ESP32<br/>avoidance · fall recovery"] -. overrides .-> FSM
+
+    classDef core fill:#0F6675,stroke:#00AFC2,color:#E6F7FA;
+    classDef safe fill:#7a2e2e,stroke:#e06c6c,color:#fff;
+    class WS,FSM core;
+    class SAFE safe;
 ```
-Sensors                        Fusion              Decision                 Output
-────────                       ───────             ─────────                ──────
-ESP32-CAM   (person zoning) ┐
-HC-SR04     (distance)      ├──▶  WorldState ──▶  13-state FSM  ──▶  motors · LEDs · sound
-MPU-6050    (fall / tilt)   ┘                          ▲
-                                                       │
-                              Flask "Local AI" (WebSocket, offline-capable)
-```
 
-> **V1 → V2:** *Make It Alive* (move, turn, react to touch) → *Make It Aware* (see, sense distance, detect falls, decide)
+> [!IMPORTANT]
+> **Safety is never delegated to the AI.** Obstacle avoidance and fall recovery are resolved deterministically on the ESP32. The Flask brain can suggest behavior, but it cannot override these decisions.
 
-**Status:** Actively developed · additive V2 protocol · verified by 206 automated tests (134 native, 51 pytest, 21 E2E) · September 2026<br>
-**Stack:** `C++` `ESP32` `WebSocket` `Flask`<br>
-**Repo:** [github.com/mzhnk/ai-pet-robot](https://github.com/mzhnk/ai-pet-robot)
+| Layer | What it does |
+|:--|:--|
+| **Perception** | Camera buckets people into left / center / right, ultrasonic measures obstacle distance, IMU catches falls and tilts |
+| **Fusion** | All three sensor streams feed one shared `WorldState` |
+| **Decision** | A 13-state FSM (curious → follow → interact → avoid → recover …) turns state into behavior |
+| **Safety** | Obstacle avoidance and fall recovery are resolved deterministically **on the ESP32**, so the AI layer can never override them |
+| **Resilience** | Base behaviors keep running if WiFi or the AI backend drops |
+
+> [!WARNING]
+> **Actively developed.** The V2 protocol is additive and still evolving, so expect changes between commits.
+
+<details>
+<summary><b>Version history: V1 → V2</b></summary>
+<br>
+
+| Version | Theme | Capabilities |
+|:--|:--|:--|
+| V1 | *Make It Alive* | Move, turn, react to touch |
+| V2 | *Make It Aware* | See, sense distance, detect falls, decide |
+
+</details>
+
+<table>
+  <tr>
+    <td><b>Status</b></td>
+    <td>Actively developed · additive V2 protocol · September 2026</td>
+  </tr>
+  <tr>
+    <td><b>Verification</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Total-206_tests-0F6675?style=flat-square" alt="206 tests" />
+      <img src="https://img.shields.io/badge/Native-134-164A55?style=flat-square" alt="134 native tests" />
+      <img src="https://img.shields.io/badge/pytest-51-164A55?style=flat-square" alt="51 pytest tests" />
+      <img src="https://img.shields.io/badge/E2E-21-164A55?style=flat-square" alt="21 end-to-end tests" />
+    </td>
+  </tr>
+  <tr>
+    <td><b>Stack</b></td>
+    <td><code>C++</code> <code>ESP32</code> <code>WebSocket</code> <code>Flask</code></td>
+  </tr>
+  <tr>
+    <td><b>Repo</b></td>
+    <td><a href="https://github.com/mzhnk/ai-pet-robot">github.com/mzhnk/ai-pet-robot</a></td>
+  </tr>
+</table>
 
 <p align="center">
-  <img src="https://github-stats-extended.vercel.app/api/pin/?username=mzhnk&repo=ai-pet-robot&theme=dark&hide_border=false&title_color=00AFC2&text_color=8B949E&icon_color=00AFC2&bg_color=0D1117&border_color=164A55&border_radius=10" alt="ai-pet-robot repository card" />
+  <a href="https://github.com/mzhnk/ai-pet-robot">
+    <img src="https://github-stats-extended.vercel.app/api/pin/?username=mzhnk&repo=ai-pet-robot&theme=dark&hide_border=false&title_color=00AFC2&text_color=8B949E&icon_color=00AFC2&bg_color=0D1117&border_color=164A55&border_radius=10" alt="ai-pet-robot repository card" />
+  </a>
   <br>
-  <img src="https://img.shields.io/github/last-commit/mzhnk/ai-pet-robot?style=flat-square&label=Last+Commit&color=0F6675" alt="ai-pet-robot last commit date" />
+  <img src="https://img.shields.io/github/last-commit/mzhnk/ai-pet-robot?style=flat-square&label=Last+commit&color=0F6675" alt="ai-pet-robot last commit" />
+  <img src="https://img.shields.io/github/languages/top/mzhnk/ai-pet-robot?style=flat-square&color=0F6675" alt="ai-pet-robot top language" />
 </p>
 
 <br>
 
-### 3D Periodic Table
+### 🧪 3D Periodic Table
 
-An interactive 3D visualization of all 118 chemical elements with four swappable layouts (Table, Sphere, Helix, Grid), smooth Anime.js transitions, and mouse, touch, and long-press interaction, in English and Indonesian.
+An interactive 3D visualization of all **118 elements** with four swappable layouts, smooth Anime.js transitions, and mouse, touch and long-press interaction, in English and Indonesian.
 
-The current version is the result of an architectural refactor: a single 690-line `index.html` split into 20 modular ES Module files, with zero behavior change and a much cleaner structure to build on.
+| Layouts | Interaction | Languages |
+|:--:|:--:|:--:|
+| Table · Sphere · Helix · Grid | Mouse · Touch · Long-press | EN · ID |
 
+> [!NOTE]
+> **Zero behavior change.** The refactor from a single 690-line `index.html` to 20 ES Modules was structural only.
 
-**What makes it technically interesting:**
+**The refactor:** one 690-line `index.html` became 20 ES Module files, with zero behavior change.
 
-- Pure CSS 3D transforms driving four distinct layout modes
-- Modular ES Module architecture, no bundler and no framework
-- Bilingual UI (EN/ID) built into the component structure, not bolted on
+```text
+Before                          After
+──────                          ─────
+index.html  (690 lines)   ──▶   20 ES Modules
+                                no bundler · no framework
+                                i18n built into the component structure
+```
 
-**Status:** Refactor shipped · September 2026<br>
-**Stack:** `JavaScript` `ES Modules` `CSS3` `Anime.js`<br>
-**Repo:** [github.com/mzhnk/periodic-table](https://github.com/mzhnk/periodic-table)
+- Pure CSS 3D transforms drive all four layout modes
+- Modular ES Module architecture, nothing between the code and the browser
+- Bilingual UI designed in from the start, not bolted on
+
+<table>
+  <tr>
+    <td><b>Status</b></td>
+    <td>Refactor shipped · September 2026</td>
+  </tr>
+  <tr>
+    <td><b>Stack</b></td>
+    <td><code>JavaScript</code> <code>ES Modules</code> <code>CSS3</code> <code>Anime.js</code></td>
+  </tr>
+  <tr>
+    <td><b>Repo</b></td>
+    <td><a href="https://github.com/mzhnk/periodic-table">github.com/mzhnk/periodic-table</a></td>
+  </tr>
+</table>
 
 <p align="center">
-  <img src="https://github-stats-extended.vercel.app/api/pin/?username=mzhnk&repo=periodic-table&theme=dark&hide_border=false&title_color=00AFC2&text_color=8B949E&icon_color=00AFC2&bg_color=0D1117&border_color=164A55&border_radius=10" alt="periodic-table repository card" />
+  <a href="https://github.com/mzhnk/periodic-table">
+    <img src="https://github-stats-extended.vercel.app/api/pin/?username=mzhnk&repo=periodic-table&theme=dark&hide_border=false&title_color=00AFC2&text_color=8B949E&icon_color=00AFC2&bg_color=0D1117&border_color=164A55&border_radius=10" alt="periodic-table repository card" />
+  </a>
   <br>
-  <img src="https://img.shields.io/github/last-commit/mzhnk/periodic-table?style=flat-square&label=Last+Commit&color=0F6675" alt="periodic-table last commit date" />
+  <img src="https://img.shields.io/github/last-commit/mzhnk/periodic-table?style=flat-square&label=Last+commit&color=0F6675" alt="periodic-table last commit" />
+  <img src="https://img.shields.io/github/languages/top/mzhnk/periodic-table?style=flat-square&color=0F6675" alt="periodic-table top language" />
 </p>
 
 ---
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=21&height=70&section=header&text=Tech%20Stack&fontSize=28&fontColor=fff&fontAlignY=65&animation=fadeIn" width="100%" alt="Tech Stack" />
-</div>
+<a id="stack"></a>
+## Stack
 
-## 🛠️ Tech Stack
+> [!TIP]
+> The left column is what I have **shipped** in real projects. The right column is what I am **still learning**.
 
-<div align="center">
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=py,js,ts,cpp,html,css,react,nextjs,tailwind,flask,sqlite,postgres,prisma,arduino,git,github&theme=dark&perline=8" alt="Python, JavaScript, TypeScript, C++, HTML, CSS, React, Next.js, Tailwind CSS, Flask, SQLite, PostgreSQL, Prisma, Arduino, Git, GitHub" />
-</a>
-
-<br><br>
-
-**Languages**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white)
-
-**Frontend**
-
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Anime.js](https://img.shields.io/badge/Anime.js-0D1117?style=for-the-badge&logo=animedotjs&logoColor=white)
-![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?style=for-the-badge&logo=shadcnui&logoColor=white)
-![Zod](https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white)
-
-**Backend & Data**
-
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![WebSocket](https://img.shields.io/badge/WebSocket-0D1117?style=for-the-badge)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
-
-**Embedded & Hardware**
-
-![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
-![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
-
-<p><sub><i>Also in the parts bin: ESP32-CAM, HC-SR04, and MPU-6050.</i></sub></p>
-
-**Testing & Tooling**
-
-![pytest](https://img.shields.io/badge/pytest-0A101F?style=for-the-badge&logo=pytest&logoColor=white)
-![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-
-<br>
-
-<p><sub><i>Learning in progress: TypeScript, React, Next.js, Tailwind CSS, PostgreSQL, Prisma, shadcn/ui, and Zod. The rest is already shipped in real projects.</i></sub></p>
-
-</div>
-
----
-
-## 🌱 Currently Exploring
-
-- **Modern web development:** TypeScript, React, Next.js App Router, server actions, and type-safe application patterns
-- **Embedded systems & robotics:** state machines, sensor integration, motor control, and reliable real-time systems
-- **JavaScript & software architecture:** ES Modules, design patterns, and how the pieces fit together beneath the framework layer
+<table>
+  <tr>
+    <th align="left" width="160">Domain</th>
+    <th align="left">Shipped in real projects</th>
+    <th align="left">Learning</th>
+  </tr>
+  <tr>
+    <td><b>Languages</b></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=py,js,cpp,html,css&theme=dark" alt="Python, JavaScript, C++, HTML, CSS" />
+    </td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=ts&theme=dark" alt="TypeScript" />
+    </td>
+  </tr>
+  <tr>
+    <td><b>Frontend</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Anime.js-0D1117?style=flat-square" alt="Anime.js" />
+      <img src="https://img.shields.io/badge/ES_Modules-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="ES Modules" />
+    </td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind&theme=dark" alt="React, Next.js, Tailwind CSS" />
+      <img src="https://img.shields.io/badge/shadcn%2Fui-000000?style=flat-square&logo=shadcnui&logoColor=white" alt="shadcn/ui" />
+      <img src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white" alt="Zod" />
+    </td>
+  </tr>
+  <tr>
+    <td><b>Backend &amp; Data</b></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=flask,sqlite&theme=dark" alt="Flask, SQLite" />
+      <img src="https://img.shields.io/badge/WebSocket-0D1117?style=flat-square" alt="WebSocket" />
+    </td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=postgres,prisma&theme=dark" alt="PostgreSQL, Prisma" />
+    </td>
+  </tr>
+  <tr>
+    <td><b>Embedded</b></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=arduino&theme=dark" alt="Arduino" />
+      <img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white" alt="ESP32" />
+      <br>
+      <sub>ESP32-CAM · HC-SR04 · MPU-6050</sub>
+    </td>
+    <td><sub>Motor control, deeper sensor fusion</sub></td>
+  </tr>
+  <tr>
+    <td><b>Testing &amp; Tooling</b></td>
+    <td>
+      <img src="https://skillicons.dev/icons?i=git,github,githubactions,vitest,playwright&theme=dark" alt="Git, GitHub, GitHub Actions, Vitest, Playwright" />
+      <img src="https://img.shields.io/badge/pytest-0A101F?style=flat-square&logo=pytest&logoColor=white" alt="pytest" />
+    </td>
+    <td><sub>Type-safe application patterns</sub></td>
+  </tr>
+</table>
 
 ---
 
-## 📊 GitHub Activity
+<a id="exploring"></a>
+## Currently Exploring
+
+> [!IMPORTANT]
+> **Current priority:** moving from plain JavaScript toward the TypeScript and Next.js ecosystem, while keeping the embedded work going in parallel.
+
+| Track | Focus | Why it matters to me |
+|:--|:--|:--|
+| **Modern web** | TypeScript, React, Next.js App Router, server actions, type-safe patterns | Moving from "it runs" to "the compiler catches my mistakes" |
+| **Embedded & robotics** | State machines, sensor integration, motor control, real-time reliability | Physical systems punish sloppy assumptions |
+| **Architecture** | ES Modules, design patterns, how the pieces fit beneath the framework | Frameworks change; structure carries over |
+
+---
+
+<a id="activity"></a>
+## Activity
 
 <p align="center">
   <img height="170" src="https://github-stats-extended.vercel.app/api?username=mzhnk&show_icons=true&theme=dark&hide_border=false&include_all_commits=true&count_private=false&title_color=00AFC2&text_color=8B949E&icon_color=00AFC2&bg_color=0D1117&border_color=164A55&border_radius=10" alt="GitHub stats" />
   <picture>
     <source media="(max-width: 480px)" srcset="https://github-readme-stats.shion.dev/api/top-langs/?username=mzhnk&layout=compact&theme=dark&hide_border=false&langs_count=5&title_color=00AFC2&text_color=8B949E&icon_color=00AFC2&bg_color=0D1117&border_color=164A55&border_radius=10" />
-    <img height="170" src="https://github-readme-stats.shion.dev/api/top-langs/?username=mzhnk&layout=compact&theme=dark&hide_border=false&langs_count=8&title_color=00AFC2&text_color=8B949E&icon_color=00AFC2&bg_color=0D1117&border_color=164A55&border_radius=10" alt="Most used programming languages" />
+    <img height="170" src="https://github-readme-stats.shion.dev/api/top-langs/?username=mzhnk&layout=compact&theme=dark&hide_border=false&langs_count=8&title_color=00AFC2&text_color=8B949E&icon_color=00AFC2&bg_color=0D1117&border_color=164A55&border_radius=10" alt="Most used languages" />
   </picture>
 </p>
 
 <p align="center">
-  <img height="170" src="https://streak-stats.demolab.com?user=mzhnk&theme=dark&hide_border=false&background=0D1117&border=164A55&stroke=164A55&ring=00AFC2&fire=00AFC2&currStreakLabel=00AFC2&sideLabels=8B949E&currStreakNum=DDE3F0&sideNums=DDE3F0&dates=6E7890&border_radius=10" alt="GitHub contribution streak" />
+  <img src="https://streak-stats.demolab.com?user=mzhnk&theme=dark&hide_border=false&background=0D1117&border=164A55&stroke=164A55&ring=00AFC2&fire=00AFC2&currStreakLabel=00AFC2&sideLabels=8B949E&currStreakNum=DDE3F0&sideNums=DDE3F0&dates=6E7890&border_radius=10" alt="Contribution streak" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mzhnk&bg_color=0D1117&color=8B949E&line=00AFC2&point=E6F7FA&area=true&area_color=0F6675&hide_border=true&radius=10" alt="Contribution activity graph" />
 </p>
 
 ---
 
-## 📫 Connect
+<a id="connect"></a>
+## Connect
+
+> [!TIP]
+> Happy to talk about embedded systems, robotics, or web architecture. Email is the best way to reach me.
 
 <p align="center">
-  <a href="https://github.com/mzhnk"><img src="https://img.shields.io/badge/GitHub-0F6675?style=for-the-badge&logo=github&logoColor=E6F7FA" alt="GitHub profile" /></a>
-  <a href="mailto:zihankholidi@gmail.com"><img src="https://img.shields.io/badge/Email-0F6675?style=for-the-badge&logo=gmail&logoColor=E6F7FA" alt="Email" /></a>
-  <a href="https://www.linkedin.com/in/mzhnk"><img src="https://img.shields.io/badge/LinkedIn-0F6675?style=for-the-badge" alt="LinkedIn profile" /></a>
-  <a href="https://instagram.com/mzkx2201"><img src="https://img.shields.io/badge/Instagram-0F6675?style=for-the-badge&logo=instagram&logoColor=E6F7FA" alt="Instagram profile" /></a>
+  <a href="https://github.com/mzhnk"><img src="https://img.shields.io/badge/GitHub-mzhnk-0F6675?style=for-the-badge&logo=github&logoColor=E6F7FA" alt="GitHub" /></a>
+  <a href="mailto:zihankholidi@gmail.com"><img src="https://img.shields.io/badge/Email-Say_hello-0F6675?style=for-the-badge&logo=gmail&logoColor=E6F7FA" alt="Email" /></a>
+  <a href="https://www.linkedin.com/in/mzhnk"><img src="https://img.shields.io/badge/LinkedIn-mzhnk-0F6675?style=for-the-badge" alt="LinkedIn" /></a>
+  <a href="https://instagram.com/mzkx2201"><img src="https://img.shields.io/badge/Instagram-mzkx2201-0F6675?style=for-the-badge&logo=instagram&logoColor=E6F7FA" alt="Instagram" /></a>
 </p>
-
----
-
-## 🎮 Just for Fun
-
-The serious part of this profile ends above this line. Down here, it's all just for fun.
-
-<p align="center"><i>My contribution graph, three ways: eaten by a snake, rebuilt as a 3D city, and flattened for the skeptics.</i></p>
-
-<!-- Snake animation -->
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mzhnk/mzhnk/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mzhnk/mzhnk/output/github-contribution-grid-snake.svg" />
-    <img alt="Snake animation eating my contribution graph" src="https://raw.githubusercontent.com/mzhnk/mzhnk/output/github-contribution-grid-snake.svg" />
-  </picture>
-</p>
-
-<!-- 3D contribution city: requires the workflow (.github/workflows/3d-contrib.yml). The image appears after its first run. -->
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mzhnk/mzhnk/3d-contrib/profile-night-view.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mzhnk/mzhnk/3d-contrib/profile-green.svg" />
-    <img alt="A year of my commits rendered as a 3D city" src="https://raw.githubusercontent.com/mzhnk/mzhnk/3d-contrib/profile-green.svg" />
-  </picture>
-</p>
-
-<p align="center">
-  <img src="https://ghchart.rshah.org/00AFC2/mzhnk" alt="My contribution chart for the last year" />
-</p>
-
-<!-- Milestone badges -->
-<p align="center">
-  <img src="https://img.shields.io/badge/Automated_Tests-206_Passing-0F6675?style=for-the-badge&logo=githubactions&logoColor=E6F7FA" alt="206 automated tests passing" />
-  <img src="https://img.shields.io/badge/Pet_Robot_FSM-13_States-0F6675?style=for-the-badge&logo=arduino&logoColor=E6F7FA" alt="13-state behavior FSM on the pet robot" />
-  <img src="https://img.shields.io/badge/3D_Periodic_Table-118_Elements-0F6675?style=for-the-badge&logo=electron&logoColor=E6F7FA" alt="3D periodic table with all 118 elements" />
-</p>
-
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random programming quote" />
-</p>
-
-<p align="center">
-  <img src="https://readme-jokes.vercel.app/api?bgColor=%230D1117&borderColor=%23164A55&codeColor=%2300AFC2" alt="Random dev joke" />
-</p>
-
 
 ---
 
@@ -240,4 +306,4 @@ The serious part of this profile ends above this line. Down here, it's all just 
   <sub>재능보다 꾸준함, 한 번에 한 커밋씩.</sub>
 </p>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0F6675&height=80&section=footer" alt="" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0F6675&height=60&section=footer" alt="" />
