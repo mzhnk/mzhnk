@@ -1,4 +1,4 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=7983DE&height=120&section=header&reversal=true&animation=fadeIn" alt="" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=7371FC&height=120&section=header&reversal=true&animation=fadeIn" alt="" />
 
 <p align="center">
   <a href="https://github.com/mzhnk">
@@ -13,11 +13,11 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Student_Developer-Indonesia-0F6675?style=flat-square" alt="Student developer, Indonesia" />
-  <img src="https://img.shields.io/badge/Focus-AI_·_Web_·_Embedded_·_Robotics-0F6675?style=flat-square" alt="Focus: AI, web, embedded, robotics" />
-  <img src="https://img.shields.io/badge/Mode-Building_in_public-0F6675?style=flat-square" alt="Building in public" />
-  <img src="https://img.shields.io/github/followers/mzhnk?style=flat-square&label=Followers&color=0F6675" alt="GitHub followers" />
-  <img src="https://komarev.com/ghpvc/?username=mzhnk&color=0F6675&style=flat-square&label=Views" alt="Profile views" />
+  <img src="https://img.shields.io/badge/Student_Developer-Indonesia-560BAD?style=flat-square" alt="Student developer, Indonesia" />
+  <img src="https://img.shields.io/badge/Focus-AI_·_Web_·_Embedded_·_Robotics-560BAD?style=flat-square" alt="Focus: AI, web, embedded, robotics" />
+  <img src="https://img.shields.io/badge/Mode-Building_in_public-560BAD?style=flat-square" alt="Building in public" />
+  <img src="https://img.shields.io/github/followers/mzhnk?style=flat-square&label=Followers&color=560BAD" alt="GitHub followers" />
+  <img src="https://komarev.com/ghpvc/?username=mzhnk&color=560BAD&style=flat-square&label=Views" alt="Profile views" />
 </p>
 
 <p align="center">
@@ -318,4 +318,4 @@ index.html  (690 lines)   ──▶   20 ES Modules
   <sub>재능보다 꾸준함, 한 번에 한 커밋씩.</sub>
 </p>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=7983DE&height=120&section=footer&animation=fadeIn" alt="" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=7371FC&height=120&section=footer&animation=fadeIn" alt="" />
