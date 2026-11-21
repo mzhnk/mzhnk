@@ -13,11 +13,11 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Student_Developer-Indonesia-560BAD?style=flat-square" alt="Student developer, Indonesia" />
-  <img src="https://img.shields.io/badge/Focus-AI_·_Web_·_Embedded_·_Robotics-560BAD?style=flat-square" alt="Focus: AI, web, embedded, robotics" />
-  <img src="https://img.shields.io/badge/Mode-Building_in_public-560BAD?style=flat-square" alt="Building in public" />
-  <img src="https://img.shields.io/github/followers/mzhnk?style=flat-square&label=Followers&color=560BAD" alt="GitHub followers" />
-  <img src="https://komarev.com/ghpvc/?username=mzhnk&color=560BAD&style=flat-square&label=Views" alt="Profile views" />
+  <img src="https://img.shields.io/badge/Student_Developer-Indonesia-023E8A?style=flat-square" alt="Student developer, Indonesia" />
+  <img src="https://img.shields.io/badge/Focus-AI_·_Web_·_Embedded_·_Robotics-023E8A?style=flat-square" alt="Focus: AI, web, embedded, robotics" />
+  <img src="https://img.shields.io/badge/Mode-Building_in_public-023E8A?style=flat-square" alt="Building in public" />
+  <img src="https://img.shields.io/github/followers/mzhnk?style=flat-square&label=Followers&color=023E8A" alt="GitHub followers" />
+  <img src="https://komarev.com/ghpvc/?username=mzhnk&color=023E8A&style=flat-square&label=Views" alt="Profile views" />
 </p>
 
 <p align="center">
